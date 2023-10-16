@@ -1,0 +1,104 @@
+@font-face {
+  font-family: scp;
+  src: url(Lekton/Lekton-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.box {
+  width: 35%;
+  height: 300px;
+  transform: rotate3d(20, -30, -10, 57deg);
+  transform-style: preserve-3d;
+  margin: 120px 350px;
+  scale: 0.8;
+}
+.box:hover > li::before {
+  margin-top: -120px;
+}
+.box > li {
+  list-style-type: none;
+  width: 100%;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 0px 30px rgb(255, 255, 255);
+}
+.box > li::before, .box > li::after {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 91, 137);
+  justify-content: center;
+  align-items: center;
+  font-family: "Satisfy", cursive;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.4s linear;
+}
+.box > li:nth-of-type(2)::before, .box > li:nth-of-type(1)::after {
+  content: "Everyone";
+}
+.box > li:nth-of-type(3)::before, .box > li:nth-of-type(2)::after {
+  content: "in this world";
+}
+.box > li:nth-of-type(4)::before, .box > li:nth-of-type(3)::after {
+  content: "should learn";
+}
+.box > li:nth-of-type(5)::before, .box > li:nth-of-type(4)::after {
+  content: "how to program,";
+}
+.box > li:nth-of-type(6)::before, .box > li:nth-of-type(5)::after {
+  content: "because";
+}
+.box > li:nth-of-type(7)::before, .box > li:nth-of-type(6)::after {
+  content: "it teaches you";
+}
+.box > li:nth-of-type(8)::before, .box > li:nth-of-type(7)::after {
+  content: "how to think.";
+}
+.box > li:nth-of-type(8)::after {
+  content: "-Steve Jobs";
+}
+.box > li:nth-of-type(1)::before {
+  content: "Quote :";
+}
+.box > li:nth-of-type(1) {
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+.box > li:nth-of-type(2) {
+  transform: translateY(-120px) translateZ(-120px);
+}
+.box > li:nth-of-type(3) {
+  transform-origin: top;
+  transform: translateY(-120px) translateZ(-120px) rotateX(-90deg);
+}
+.box > li:nth-of-type(4) {
+  transform: translateZ(-240px) translateY(-240px);
+}
+.box > li:nth-of-type(5) {
+  transform-origin: top;
+  transform: translateY(-240px) translateZ(-240px) rotateX(-90deg);
+}
+.box > li:nth-of-type(6) {
+  transform: translateY(-360px) translateZ(-360px);
+}
+.box > li:nth-of-type(7) {
+  transform-origin: top;
+  transform: translateY(-360px) translateZ(-360px) rotateX(-90deg);
+}
+.box > li:nth-of-type(8) {
+  transform: translateY(-480px) translateZ(-480px);
+}
+.box > li:nth-of-type(9) {
+  transform-origin: top;
+  transform: translateY(-480px) translateZ(-480px) rotateX(-90deg);
+}/*# sourceMappingURL=Trick-11.css.map */
